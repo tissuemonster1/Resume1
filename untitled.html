@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Document</title>
+	<style>
+
+			html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+body{
+	color: #fff;
+	text-align: center;
+}
+.grid{
+	grid-template-columns: repeat(5,1tr);
+	grid-auto-rows: minmax(150px, auto);
+	grid-gap: 1em;
+	display: grid;
+
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+
+
+}
+.grid div{
+	/*background: #7b7c77;*/
+	padding: 30px;
+}
+
+
+.item1{
+	display: flex;
+	align-items: flex-start;
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 1/3;
+	grid-row: 1/2;
+	font-size: 150%;
+	  border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(234, 237, 242);
+
+}
+.rocket{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin:  auto;
+	}
+.item2{
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 3/6;
+	grid-row: 1/5;
+	 border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(234, 237, 242);
+}
+
+.item3{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 1/3;
+	grid-row: 2/3;
+	 border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(234, 237, 242);
+}
+.item4{
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 1/3;
+	grid-row: 3/4;
+	 border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(234, 237, 242);
+}
+.item5{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 3/6;
+	grid-row: 5/7;
+	 border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(234, 237, 242);
+}
+.item6{
+	background-image: linear-gradient(to top, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 1/3;
+	grid-row: 4/7;
+	cursor: pointer;
+	
+	 border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(234, 237, 242);
+}
+
+/* .item7{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 5/6;
+	grid-row: 4/6;
+}
+.item8{
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 1/3;
+	grid-row: 7/7;
+}
+.item9{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 3/5;
+	grid-row: 7/7;}
+
+	.item10{
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	grid-column: 5/6;
+	grid-row: 6/9; */
+}
+
+/*	.item11{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+	grid-column: 5/6;
+	grid-row: 4/6;}
+
+	.item12{
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+	grid-column: 1/3;
+	grid-row: 7/7;
+}*/
+
+.rocket{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+
+}
+.a{
+	font-size: 150%;
+}
+
+div.overall{
+	text-align: left;
+
+}
+/* .working{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+} */
+
+
+div.subtitle{
+	text-align:  center;
+	font-size:  30px;
+	font-family:  verdana;
+
+}
+
+/* .education{
+	display: flex;
+	flex-direction: row;
+	justify-content: center; */
+}
+div.edu{
+	text-align:  center;
+	font-size:  30px;
+	font-family:  verdana;
+}
+
+.icon{
+	width: 50px;
+	height: 50px;
+	border-radius: 60px;
+
+}
+
+div.head{
+	text-align: left;
+	font-size: 15px;
+
+}
+
+.item1:hover{
+	 -moz-box-shadow: 1px 1px 5px #999;
+ -webkit-box-shadow: 1px 1px 5px #999;
+ box-shadow: 1px 1px 5px #999;
+ -webkit-transition: all .2s ease;
+transition: all .2s ease;
+    }
+.item2:hover{
+	 -moz-box-shadow: 1px 1px 5px #999;
+ -webkit-box-shadow: 1px 1px 5px #999;
+ box-shadow: 1px 1px 5px #999;
+ -webkit-transition: all .2s ease;
+transition: all .2s ease;
+   
+
+    }
+    .item3:hover{
+	 -moz-box-shadow: 1px 1px 5px #999;
+ -webkit-box-shadow: 1px 1px 5px #999;
+ box-shadow: 1px 1px 5px #999;
+ -webkit-transition: all .2s ease;
+transition: all .2s ease;
+    }
+.item4:hover{
+	 -moz-box-shadow: 1px 1px 5px #999;
+ -webkit-box-shadow: 1px 1px 5px #999;
+ box-shadow: 1px 1px 5px #999;
+ -webkit-transition: all .2s ease;
+transition: all .2s ease;
+   
+
+    }
+    .item5:hover{
+	 -moz-box-shadow: 1px 1px 5px #999;
+ -webkit-box-shadow: 1px 1px 5px #999;
+ box-shadow: 1px 1px 5px #999;
+ -webkit-transition: all .2s ease;
+transition: all .2s ease;
+    }
+.item6:hover{
+	 -moz-box-shadow: 1px 1px 5px #999;
+ -webkit-box-shadow: 1px 1px 5px #999;
+ box-shadow: 1px 1px 5px #999;
+ -webkit-transition: all .2s ease;
+transition: all .2s ease;
+   
+
+    }
+
+.outside{
+
+	width: 150px;
+		height: 10px;
+		background-color: #fff;
+		border-radius: 50px;
+		border: 1px solid #000;
+		position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+		position: relative;
+}
+.inside{
+		width: 120px;
+		height: 0.5px;
+		background-image: linear-gradient(to top, #84fab0 0%, #8fd3f4 100%);
+		border-radius: 50px;
+		border: 1px solid #000;
+		position: absolute;
+		top: 5px;
+		left: 4.5px;
+		
+}
+
+.outside1{
+
+	width: 150px;
+		height: 10px;
+		background-color: #fff;
+		border-radius: 50px;
+		border: 1px solid #000;
+		position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+		position: relative;
+}
+.inside1{
+		width: 130px;
+		height: 0.5px;
+		background-image: linear-gradient(to top, #84fab0 0%, #8fd3f4 100%);
+		border-radius: 50px;
+		border: 1px solid #000;
+		position: absolute;
+		top: 5px;
+		left: 4.5px;
+		
+}
+.outside2{
+
+	width: 150px;
+		height: 10px;
+		background-color: #fff;
+		border-radius: 50px;
+		border: 1px solid #000;
+		position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+		position: relative;
+}
+.inside2{
+		width: 80px;
+		height: 0.5px;
+		background-image: linear-gradient(to top, #84fab0 0%, #8fd3f4 100%);
+		border-radius: 50px;
+		border: 1px solid #000;
+		position: absolute;
+		top: 5px;
+		left: 4.5px;
+		
+}
+
+</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="item1">
+			<div class="me">
+			<img class="rocket" src="https://cdn.shopify.com/s/files/1/1501/4378/products/Nala_Cat_Monster_Hood_Shape_preview_1400x.jpg?v=1517942859" alt="rocket-raccoon" >
+					
+				</style>
+				<br><br>
+			<div class="subtitle">Irene Ho</div>
+		</div>
+				</div>
+		
+		<div class="item2">	
+			<div class="working">
+			<img class="icon" src="data:image/png;base64,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" alt="work"><div class="subtitle">Working Experience</div></div>
+				<div class="overall">
+				<div class="suez">
+				<h2>SUEZ (Hong Kong): Assistant Treasury Accountant</h2>
+				<h2>OCT 2017-JAN 2018</h2>
+				<h2>System: Oracle/SAP</h2><br>
+				<h3>•Responsible for supplier’s reconciliation of statement of account for Japan, China, Australia and Singapore. <br>•Customer receipts allocations and reconciliations.
+				<br>•Prepare month end closing, AP/AR account reconciliation and ensure all general ledgers are entered. <br>•Prepare month end closing general ledger for intercompany.
+				</h3></div>
+		
+				<div class="avnet">
+			
+				<h2>Avnet Technology Hong Kong Limited: Accounting Assistant </h2>
+				<h2>JUL 2016-JUN 2017</h2>
+				<h2>System: SAP</h2><br>
+				<h3>
+				•Process and enter over 300 invoices per day for invoices from Hong Kong, Macau and. <br>
+				•Prepare account reconciliation and payment over 5 million USD fortnightly. <br>
+				•Assist with month end closing. Ensure all goods are received. <br>
+				•Arrange monthly payroll transfer and fund transfer. <br>
+				•Prepare weekly cash flow forecast and <br>
+				•Prepare intercom GL entry every week after payment.
+				</h3>
+				</div>
+				<div class="charles">
+		
+				<h2>Charles Parsons: Accounts Payable clerk </h2>
+				<h2>AUG 2015-MAY 2016</h2>
+				<h2>System: Oracle & Apparel 21</h2><br>
+				<h3>
+				•Process purchase order and three way match invoices; resolve quantity and unit price discrepancy with supplier. <br>
+				•Coding and entering invoices for 3 company and 1 inter-company. <br>
+				• Prepare payment voucher and process local and international payment over 3 million USD fortnightly. <br>
+				•Assist with month end closing, ensure all regular expense enter in the system and all accrual are correct and report to management team. <br>
+				•Reconciliation of suppliers statement, resolve discrepancy and make sure    account are up to date. <br>
+				• Bank reconciliation, upload bank statement and GL entry daily. <br>
+				•Employee expense reimbursement. <br>
+				•Petty cash reconciliation and credit management.
+
+				</h3>
+				</div>
+				<div class="house">
+		
+				<h2>House of Quirky: Accounts Payable clerk </h2>
+				<h2>JUN 2010-JUL 2015</h2>
+				<h2>System: Apparel 21</h2><br>
+				<h3>
+	
+					•Batching, matching and coding invoices in over 80 cost centers and over 150 GL accounts. <br>
+					•Prepare and process payment for local, UK, USA and international inter-company for over 500,000 AUS by EFT weekly. <br>
+					•Process purchase order; resolve quantity and unit price discrepancy with supplier. <br>
+					•Assist with month end closing, ensure all regular expense, freight, duty in the system before month end. <br>
+					•Prepare UK and US Intercompany reconciliation and GL entry monthly. <br>
+					•Reconciliation of suppliers statement, resolve discrepancy and make sure account are up to date. <br>
+					•Bank reconciliation. <br>
+					•Employee expense and visual merchandiser reimbursement weekly. <br>
+					•Monthly company credit card reconciliation.
+					•Petty cash reconciliation and credit management.
+					</h3>
+					</div>
+					</div>
+					</div>
+	
+
+	<div class="item3">
+		<div class="contact">
+			<div class="subtitle">Contact</div>
+			<h1><img class="icon" src="https://image.freepik.com/free-icon/telephone-symbol-button_318-41893.jpg" alt="phone icon"> <br> 0908 360 337
+			</h1>
+			<br><br>
+			<h1><img class="icon" src="https://cdn.pixabay.com/photo/2014/04/03/09/58/email-309491_960_720.png" alt="email"> <br> johanireneho@hotmailc.om
+			</h1>
+			<br><br>
+			<h1><img class="icon" src="
+			http://images.clipartpanda.com/google-location-icon-location-circled.svg" alt="location"> <br> Taiwan
+			</h1></div></div>
+	<div class="item4">
+		<div class="language">
+			<div class="subtitle">Language</div>
+			<div class="english">English
+				<div class="outside">
+					<div class="inside"></div>
+				</div>
+			</div>
+			<div class="Mandarin">Mandarin
+				<div class="outside1">
+					<div class="inside1"></div>
+				</div>
+			</div>
+			<div class="Cantonese">Cantonese
+				<div class="outside2">
+					<div class="inside2"></div>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+	
+	<div class="item5">
+		<div class="education">
+			<img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5V_Smzg57Oe1tNtKv-tryYwSrzxSmFw-OEdY3o2a-NHFz0lgW" alt="education icon">
+			<div class="subtitle">Education</div></div>
+			<div class="head">
+			<h2>Bachelor of Business</h2>
+			<h2>University of Technology,Sydney</h2>
+			<h2>2006-2009</h2><br><br>
+			<h2>Diploma of Business</h2>
+			<h2>University of Technology,Sydney</h2>
+			<h2>2003-2006</h2><br><br>
+			</div></div>
+	<div class="item6">
+		<div class="Skill">
+			<div class="subtitle">Skills</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+	
+
+
+
+
+</script>
+	
+</body>
+</html>	
+	
